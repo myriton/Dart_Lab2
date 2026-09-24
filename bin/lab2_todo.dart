@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import 'dart:io';
 import 'package:lab2_todo/todo.dart';
 void printMenu() {
@@ -100,7 +101,28 @@ void main() {
       default: printMenu(); print('Неизвестная команда.');
     }
   }
+=======
+import 'package:lab2_todo/todo.dart';
+import 'dart:io';
+void main(){
+  Todo task1 = Todo(id: 1, title: 'Купить продукты ');
+  Todo task2 = Todo(id: 2, title: 'Сделать зарядку');
+  task1.complete();
+  print(task1);
+  print(task2);
+
+  stdout.write('Введите что-нибудь: ');
+  string? input = stdin.readLineSync();
+  print('Вы ввели: $input');
+  
+>>>>>>> 5b62aa606bf32ee8fc673f226a44fce6c98f1f17
 }
   
 
 
+<<<<<<< HEAD
+=======
+  
+
+
+>>>>>>> 5b62aa606bf32ee8fc673f226a44fce6c98f1f17
