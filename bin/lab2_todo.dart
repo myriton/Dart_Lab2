@@ -1,15 +1,16 @@
 import 'dart:io';
 import 'package:lab2_todo/todo.dart';
+
 void printMenu() {
   print('');
   print('ToDo список');
   print('add    - добавить задачу');
   print('list   - показать все задачи');
-  print('done   - отметить выполненой');
+  print('done   - отметить выполненной');
   print('delete - удалить задачу');
   print('exit   - выйти из программы');
 }
-  
+
 void addTodo(List<Todo> todos) {
   stdout.write('Название задачи: ');
   String? input = stdin.readLineSync();
@@ -23,13 +24,13 @@ void addTodo(List<Todo> todos) {
   todos.add(Todo(id: newId, title: input.trim()));
   print('Задача добавлена!');
 }
-  
+
 void listTodos(List<Todo> todos) {
   if (todos.isEmpty) {
     print('Список задач пуст');
     return;
   }
-   
+
   print('');
   for (var todo in todos) {
     print(todo);
@@ -100,23 +101,4 @@ void main() {
       default: printMenu(); print('Неизвестная команда.');
     }
   }
-
-import 'package:lab2_todo/todo.dart';
-import 'dart:io';
-void main(){
-  Todo task1 = Todo(id: 1, title: 'Купить продукты ');
-  Todo task2 = Todo(id: 2, title: 'Сделать зарядку');
-  task1.complete();
-  print(task1);
-  print(task2);
-
-  stdout.write('Введите что-нибудь: ');
-  string? input = stdin.readLineSync();
-  print('Вы ввели: $input');
 }
-  
-
-
-  
-
-
