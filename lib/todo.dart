@@ -7,7 +7,7 @@ class Todo {
 
   @override
   String toString() {
-    String status = isDone ? '[x]' : '[]';
+    String status = isDone ? '[x]' : '[ ]';
     return '$status $id. $title';
   }
 
