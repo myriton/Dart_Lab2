@@ -100,7 +100,7 @@ void main() {
       default: printMenu(); print('Неизвестная команда.');
     }
   }
-=======
+
 import 'package:lab2_todo/todo.dart';
 import 'dart:io';
 void main(){
@@ -113,15 +113,10 @@ void main(){
   stdout.write('Введите что-нибудь: ');
   string? input = stdin.readLineSync();
   print('Вы ввели: $input');
-  
->>>>>>> 5b62aa606bf32ee8fc673f226a44fce6c98f1f17
 }
   
 
 
-<<<<<<< HEAD
-=======
   
 
 
->>>>>>> 5b62aa606bf32ee8fc673f226a44fce6c98f1f17
