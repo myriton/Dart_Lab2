@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import 'dart:io';
 import 'package:lab2_todo/todo.dart';
 void printMenu() {
